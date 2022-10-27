@@ -4,6 +4,7 @@ public class PlayerState : MonoBehaviour
 {
     private PlayerStates currentState;
 
+    private Movement movement;
     private CameraLook mouseLook;
     private CameraShake cameraShake;
 
@@ -14,6 +15,7 @@ public class PlayerState : MonoBehaviour
     {
         mouseLook = GetComponentInChildren<CameraLook>();
         cameraShake = GetComponentInChildren<CameraShake>();
+        movement = GetComponent<Movement>();
     }
 
     private void Update()
@@ -21,11 +23,13 @@ public class PlayerState : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             currentState = PlayerStates.Normal;
+            movement.SlowMovement(false);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             currentState = PlayerStates.SlowDown;
+            movement.SlowMovement(true);
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -43,5 +47,10 @@ public class PlayerState : MonoBehaviour
             currentState = PlayerStates.CameraShaking;
             StartCoroutine(cameraShake.Shake(shakeDuration, shakeMagnitude));
         }
+    }
+
+    public PlayerStates GetCurrentState()
+    {
+        return currentState;
     }
 }

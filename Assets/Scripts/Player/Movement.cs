@@ -3,11 +3,15 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private CharacterController controller;
+    private PlayerState playerState;
 
     private float speed;
     private float normalSpeed = 10f;
     private float slowSpeed = 2;
     private float jumpHeight = 3f;
+
+    private float x;
+    private float z;
 
     private Vector3 velocity;
 
@@ -22,6 +26,7 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        playerState = GetComponent<PlayerState>();
         speed = normalSpeed;
     }
 
@@ -32,8 +37,7 @@ public class Movement : MonoBehaviour
         if (isGrounded && velocity.y < 0)
             velocity.y = -2f;
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        PlayerAxis();
 
         Vector3 move = transform.right * x + transform.forward * z;
 
@@ -47,10 +51,25 @@ public class Movement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-    private void SlowMovement()
+    public void SlowMovement(bool option)
     {
-        speed = slowSpeed;
+        if (option)
+            speed = slowSpeed;
+        else
+            speed = normalSpeed;
     }
 
-
+    public void PlayerAxis()
+    {
+        if(playerState.GetCurrentState() == PlayerStates.MovementInverted)
+        {
+            x = Input.GetAxis("Vertical");  
+            z = Input.GetAxis("Horizontal");
+        }
+        else
+        {
+            x = Input.GetAxis("Horizontal");
+            z = Input.GetAxis("Vertical");
+        }
+    }
 }
