@@ -16,6 +16,8 @@ public class PlayerState : MonoBehaviour
         mouseLook = GetComponentInChildren<CameraLook>();
         cameraShake = GetComponentInChildren<CameraShake>();
         movement = GetComponent<Movement>();
+
+        currentState = PlayerStates.Normal;
     }
 
     private void Update()
