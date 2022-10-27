@@ -417,6 +417,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 455158785}
+  - component: {fileID: 455158786}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -439,6 +440,18 @@ Transform:
   m_Father: {fileID: 786249369}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &455158786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455158784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f3a4ceea890e07479b7e6caafe9dd1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &648006163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -706,6 +719,7 @@ GameObject:
   - component: {fileID: 786249369}
   - component: {fileID: 786249371}
   - component: {fileID: 786249372}
+  - component: {fileID: 786249370}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -730,6 +744,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &786249370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786249368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bdd0bccd07b8b24491fcaf391a20923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!143 &786249371
 CharacterController:
   m_ObjectHideFlags: 0
@@ -838,8 +864,8 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194226}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -925,7 +951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 600
-  playerObject: {fileID: 786249369}
+  playerObject: {fileID: 0}
 --- !u!224 &1010478997 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3605166683267532657, guid: c6a23a2613635244aa543c0531b95081, type: 3}

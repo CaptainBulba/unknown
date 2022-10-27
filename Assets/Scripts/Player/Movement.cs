@@ -4,7 +4,9 @@ public class Movement : MonoBehaviour
 {
     private CharacterController controller;
 
-    private float speed = 10f;
+    private float speed;
+    private float normalSpeed = 10f;
+    private float slowSpeed = 2;
     private float jumpHeight = 3f;
 
     private Vector3 velocity;
@@ -20,6 +22,7 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        speed = normalSpeed;
     }
 
     private void Update()
@@ -43,4 +46,11 @@ public class Movement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
     }
+
+    private void SlowMovement()
+    {
+        speed = slowSpeed;
+    }
+
+
 }
