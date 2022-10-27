@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MouseLook : MonoBehaviour
@@ -11,6 +12,8 @@ public class MouseLook : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+
+     //   StartCoroutine(CameraShake(20f, 1f));   
     }
 
     private void Update()
@@ -23,5 +26,26 @@ public class MouseLook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerObject.Rotate(Vector3.up * mouseX);
+    }
+
+    private IEnumerator CameraShake(float duration, float magnitude)
+    {
+        Vector3 originalPos = transform.localPosition;
+
+        float elapsed = 0f;
+
+        while(elapsed < duration)
+        {
+            float x = Random.Range(-0.1f, 0.1f) * magnitude;
+            float y = Random.Range(-0.1f, 0.1f) * magnitude;
+
+            transform.localPosition = new Vector3(x, y, originalPos.z);
+
+            elapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        transform.localPosition = originalPos;
     }
 }
