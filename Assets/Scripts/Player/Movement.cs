@@ -13,19 +13,23 @@ public class Movement : MonoBehaviour
     private float z;
 
     private Vector3 velocity;
-
     private float gravity = -9.81f;
+
+    private AudioSource footstepAudio;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         playerState = GetComponent<PlayerState>();
+        footstepAudio = GetComponent<AudioSource>();
         speed = normalSpeed;
     }
 
     private void Update()
     {
         PlayerAxis();
+
+        
 
         Vector3 move = transform.right * x + transform.forward * z;
 
@@ -34,6 +38,11 @@ public class Movement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if (move != new Vector3(0, 0, 0))
+            footstepAudio.enabled = true;
+        else
+            footstepAudio.enabled = false;
     }
 
     public void SlowMovement(bool option)

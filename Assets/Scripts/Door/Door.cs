@@ -7,7 +7,6 @@ public class Door : MonoBehaviour
 	private GameObject player;
 
 	private bool isOpen = false;
-
 	private float maxDistance = 3f;
 
 	private enum DoorAnims
