@@ -1,36 +1,44 @@
+using System.Collections;
 using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    private Animator anim;
-    private bool isOpen = false;
+	private Animator doorAnim;
+	private GameObject player;
 
-    private string openAnim = "Door Open";
-    private string closeAnim = "Door Close";
+	private bool isOpen = false;
+
+	private float maxDistance = 3f;
+
+	private enum DoorAnims
+    {
+		Opening,
+		Closing
+    }
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
+		player = LevelManager.Instance.GetPlayerObject();
+		doorAnim = GetComponent<Animator>();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-            UseDoor();
-    }
+    private void OnMouseOver()
+	{
+		if(Vector3.Distance(player.transform.position, transform.position) < maxDistance && Input.GetMouseButtonDown(0))
+			UseDoor();
+	}
 
-    private void UseDoor()
-    {
-        if(isOpen)
-        {
-            anim.Play(closeAnim, 0, 0);
-            isOpen = false;
-        }
-        else
-        {
-            anim.Play(openAnim, 0, 0);
-            isOpen = true;
-        }
+	private void UseDoor()
+	{
+		DoorAnims anim;
 
-    }
+		if (isOpen)
+			anim = DoorAnims.Closing;
+		else
+			anim = DoorAnims.Opening;
+
+		isOpen = !isOpen;
+		doorAnim.Play(anim.ToString());
+	}
 }
+
