@@ -6,49 +6,43 @@ public class Movement : MonoBehaviour
     private PlayerState playerState;
 
     private float speed;
-    private float normalSpeed = 10f;
-    private float slowSpeed = 2;
-    private float jumpHeight = 3f;
+    private float normalSpeed = 4f;
+    private float slowSpeed = 2f;
 
     private float x;
     private float z;
 
     private Vector3 velocity;
-
     private float gravity = -9.81f;
-    private float groundDistance = 0.4f;
 
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundMask;
-
-    private bool isGrounded; 
+    private AudioSource footstepAudio;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         playerState = GetComponent<PlayerState>();
+        footstepAudio = GetComponent<AudioSource>();
         speed = normalSpeed;
     }
 
     private void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
-        if (isGrounded && velocity.y < 0)
-            velocity.y = -2f;
-
         PlayerAxis();
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
 
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if (move != new Vector3(0, 0, 0))
+            footstepAudio.enabled = true;
+        else
+            footstepAudio.enabled = false;
     }
 
     public void SlowMovement(bool option)
@@ -63,8 +57,8 @@ public class Movement : MonoBehaviour
     {
         if(playerState.GetCurrentState() == PlayerStates.MovementInverted)
         {
-            x = Input.GetAxis("Vertical");  
-            z = Input.GetAxis("Horizontal");
+            x = -Input.GetAxis("Horizontal");
+            z = -Input.GetAxis("Vertical");
         }
         else
         {
