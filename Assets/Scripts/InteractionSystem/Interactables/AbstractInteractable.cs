@@ -11,7 +11,7 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
     [Space]
     [SerializeField] private bool isInteractable = true;
     [SerializeField] private string tooltipMessage = "interact";
-    [SerializeField] private Item item;
+    [SerializeField] private Photo item;
     #endregion
 
     #region Properties    
@@ -22,7 +22,7 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
 
     public string TooltipMessage => tooltipMessage;
 
-    public Item InteractableItem => item;
+    public Photo InteractableItem => item;
     #endregion
 
     #region Methods

@@ -9,6 +9,6 @@ public interface IInteractable
     bool IsInteractable { get; }
     string TooltipMessage { get; }
 
-    Item InteractableItem { get; }
+    Photo InteractableItem { get; }
     void OnInteract();
 }
