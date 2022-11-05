@@ -48,8 +48,8 @@ public class Movement : MonoBehaviour
     {
         if(playerState.GetCurrentState() == PlayerStates.MovementInverted)
         {
-            x = Input.GetAxis("Vertical");  
-            z = Input.GetAxis("Horizontal");
+            x = -Input.GetAxis("Horizontal");
+            z = -Input.GetAxis("Vertical");
         }
         else
         {
