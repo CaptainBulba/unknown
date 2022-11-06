@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b878918ce2e2486498378a39e6f5e7f6, type: 3}
-  m_Name: Family
+  m_Name: Girl
   m_EditorClassIdentifier: 
-  name: Family Photo
-  icon: {fileID: 21300000, guid: 7605416e5be535a4da4ada54e90fa036, type: 3}
+  name: Baby
+  icon: {fileID: 21300000, guid: dc24329727e1b5947b69272cb7ea9c85, type: 3}
   isDefaultPhoto: 0

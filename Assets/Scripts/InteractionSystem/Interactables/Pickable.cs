@@ -1,18 +1,18 @@
 
 public class Pickable : AbstractInteractable
 {
-    Inventory inventory;
+    Album album;
 
     public override void OnInteract()
     {
-        inventory.Add(InteractableItem);
+        album.Add(InteractableItem);
         Destroy(gameObject);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        inventory = Inventory.instance;
+        album = Album.instance;
     }
 
     // Update is called once per frame

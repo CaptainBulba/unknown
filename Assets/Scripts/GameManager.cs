@@ -1,17 +1,23 @@
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    Inventory inventory;
+    Album album;
+
+    [SerializeField] private GameObject albumView;
+    [SerializeField] private TextMeshProUGUI photoCount;
 
     #region Singleton
     public static GameManager instance;
+
+    private bool showAlbumView = false;
 
     private void Awake()
     {
         if (instance != null)
         {
-            Debug.LogWarning("Inventory has more tha one instance");
+            Debug.LogWarning("Album has more tha one instance");
             return;
         }
 
@@ -22,11 +28,32 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inventory = Inventory.instance;
+        album = Album.instance;
+        toggleAlbumView(0);
+        album.OnPhotoAddedToAlbum += updatePhotoCount;
+    }
+
+    void updatePhotoCount(object o, PhotoAddedToAlbum itemArg)
+    {
+        photoCount.text = album.photos.Count.ToString();
+    }
+
+    void toggleAlbumView(int show)
+    {
+        foreach (Transform obj in albumView.transform)
+        {
+            obj.GetComponent<CanvasRenderer>().SetAlpha(show);
+        }
+        albumView.GetComponent<CanvasRenderer>().SetAlpha(show);
+
     }
 
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            showAlbumView = !showAlbumView;
+            toggleAlbumView(showAlbumView ? 1 : 0);
+        }
     }
 }
