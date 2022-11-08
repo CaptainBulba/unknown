@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject albumView;
     [SerializeField] private TextMeshProUGUI photoCount;
+    [SerializeField] private GameObject noteScroll;
 
     #region Singleton
     public static GameManager instance;
@@ -33,6 +34,12 @@ public class GameManager : MonoBehaviour
         album.OnPhotoAddedToAlbum += updatePhotoCount;
     }
 
+    public void setScrollNote(string note)
+    {
+        noteScroll.SetActive(true);
+        noteScroll.GetComponent<TextMeshProUGUI>().text = note;
+    }
+
     void updatePhotoCount(object o, PhotoAddedToAlbum itemArg)
     {
         photoCount.text = album.photos.Count.ToString();
@@ -54,6 +61,11 @@ public class GameManager : MonoBehaviour
         {
             showAlbumView = !showAlbumView;
             toggleAlbumView(showAlbumView ? 1 : 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            noteScroll.SetActive(false);
         }
     }
 }
