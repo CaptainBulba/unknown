@@ -7,7 +7,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private GameObject albumView;
     [SerializeField] private TextMeshProUGUI photoCount;
-    [SerializeField] private GameObject noteScroll;
+    [SerializeField] private GameObject noteScrollCanvas;
+    [SerializeField] private TextMeshProUGUI noteScroll;
 
     #region Singleton
     public static GameManager instance;
@@ -36,8 +37,8 @@ public class GameManager : MonoBehaviour
 
     public void setScrollNote(string note)
     {
-        noteScroll.SetActive(true);
-        noteScroll.GetComponent<TextMeshProUGUI>().text = note;
+        noteScrollCanvas.SetActive(true);
+        noteScroll.text = note;
     }
 
     void updatePhotoCount(object o, PhotoAddedToAlbum itemArg)
@@ -65,7 +66,8 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            noteScroll.SetActive(false);
+            noteScroll.text = "";
+            noteScrollCanvas.SetActive(false);
         }
     }
 }
