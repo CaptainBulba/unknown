@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b878918ce2e2486498378a39e6f5e7f6, type: 3}
-  m_Name: People
+  m_Name: Family2
   m_EditorClassIdentifier: 
-  name: Fine People
-  icon: {fileID: 21300000, guid: dd3114c17c1e4cc4b8622d532874b91b, type: 3}
+  name: Family 2
+  icon: {fileID: 21300000, guid: fa2dbae86f6643a4ba92497f6719b00c, type: 3}
   isDefaultPhoto: 0

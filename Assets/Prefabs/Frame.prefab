@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7251720594380536643
+--- !u!1 &8263633681354327625
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7251720594380536642}
-  - component: {fileID: 7251720594380536652}
-  - component: {fileID: 7251720594380536653}
+  - component: {fileID: 7880078521968939488}
+  - component: {fileID: 5805947904026193102}
+  - component: {fileID: 3729354195579191208}
   m_Layer: 5
-  m_Name: LandscapeFrame
+  m_Name: Frame
   m_TagString: Frame
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7251720594380536642
+--- !u!224 &7880078521968939488
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7251720594380536643}
+  m_GameObject: {fileID: 8263633681354327625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,24 +34,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36.6, y: 26.2}
-  m_SizeDelta: {x: 47.42, y: 40.81}
+  m_AnchoredPosition: {x: 34.2472, y: 8.4295}
+  m_SizeDelta: {x: 43.2343, y: 57.9475}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7251720594380536652
+--- !u!222 &5805947904026193102
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7251720594380536643}
+  m_GameObject: {fileID: 8263633681354327625}
   m_CullTransparentMesh: 1
---- !u!114 &7251720594380536653
+--- !u!114 &3729354195579191208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7251720594380536643}
+  m_GameObject: {fileID: 8263633681354327625}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
