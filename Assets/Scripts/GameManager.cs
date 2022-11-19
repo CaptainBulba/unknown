@@ -38,10 +38,15 @@ public class GameManager : MonoBehaviour
         playerObject = FindObjectOfType<Movement>().gameObject;
     }
 
-    public void setScrollNote(string note)
+    public void setScrollNote(GameObject note, string noteText)
     {
         noteScrollCanvas.SetActive(true);
-        noteScroll.text = note;
+        noteScroll.text = noteText;
+
+        if(note.GetComponent<NoteActions>() != null)
+        {
+            note.GetComponent<NoteActions>().DoAction();
+        }
     }
 
     void updatePhotoCount(object o, PhotoAddedToAlbum itemArg)
@@ -49,7 +54,7 @@ public class GameManager : MonoBehaviour
         photoCount.text = album.photos.Count.ToString();
     }
 
-    void toggleAlbumView(int show)
+    public void toggleAlbumView(int show)
     {
         foreach (Transform obj in albumView.transform)
         {

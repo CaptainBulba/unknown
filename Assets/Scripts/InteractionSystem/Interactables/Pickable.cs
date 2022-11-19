@@ -9,23 +9,17 @@ public class Pickable : AbstractInteractable
         if (InteractableItem != null)
         {
             album.Add(InteractableItem);
+            gameManager.toggleAlbumView(1);
         } else if (InteractableNote != null)
         {
-            gameManager.setScrollNote(InteractableNote.note);
+            gameManager.setScrollNote(this.gameObject, InteractableNote.note);
         }
         Destroy(gameObject);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         album = Album.instance;
         gameManager = GameManager.instance;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

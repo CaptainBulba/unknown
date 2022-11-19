@@ -3,9 +3,9 @@ using UnityEngine;
 public class Door : MonoBehaviour
 {
 	private Animator doorAnim;
-	private GameObject player;
-
 	private bool isOpen = false;
+
+	[SerializeField] private bool isLocked = false; 
 
 	private enum DoorAnims
     {
@@ -15,21 +15,30 @@ public class Door : MonoBehaviour
 
     private void Start()
     {
-		player = GameManager.instance.GetPlayerObject();
 		doorAnim = GetComponent<Animator>();
     }
 
 	public void UseDoor()
 	{
-		DoorAnims anim;
+		if (!isLocked)
+		{
+			DoorAnims anim;
 
-		if (isOpen)
-			anim = DoorAnims.Closing;
+			if (isOpen)
+				anim = DoorAnims.Closing;
+			else
+				anim = DoorAnims.Opening;
+
+			isOpen = !isOpen;
+			doorAnim.Play(anim.ToString());
+		}
 		else
-			anim = DoorAnims.Opening;
-
-		isOpen = !isOpen;
-		doorAnim.Play(anim.ToString());
+			Debug.Log("door is locked");
 	}
+
+	public void UnlockDoor()
+    {
+		isLocked = false;
+    }
 }
 
