@@ -26875,6 +26875,7 @@ GameObject:
   - component: {fileID: 808951037338500424}
   - component: {fileID: 808951037338500425}
   - component: {fileID: 808951037338500426}
+  - component: {fileID: 1283215207471614733}
   - component: {fileID: 1032805145256922547}
   m_Layer: 0
   m_Name: Door
@@ -26979,6 +26980,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1283215207471614733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037338500421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
 --- !u!114 &1032805145256922547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31696,6 +31715,7 @@ GameObject:
   - component: {fileID: 808951037469216639}
   - component: {fileID: 808951037469216632}
   - component: {fileID: 808951037469216633}
+  - component: {fileID: 1692951397684919299}
   - component: {fileID: 7925407082095091763}
   m_Layer: 0
   m_Name: Door
@@ -31800,6 +31820,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1692951397684919299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037469216628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
 --- !u!114 &7925407082095091763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54260,6 +54298,7 @@ GameObject:
   - component: {fileID: 808951038249611995}
   - component: {fileID: 808951038249611988}
   - component: {fileID: 808951038249611989}
+  - component: {fileID: 3333020264526108257}
   - component: {fileID: 5930753229655373677}
   - component: {fileID: 4983805477057664835}
   m_Layer: 0
@@ -54365,6 +54404,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3333020264526108257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951038249611984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
 --- !u!114 &5930753229655373677
 MonoBehaviour:
   m_ObjectHideFlags: 0

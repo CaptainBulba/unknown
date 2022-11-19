@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class Door : MonoBehaviour
@@ -7,7 +6,6 @@ public class Door : MonoBehaviour
 	private GameObject player;
 
 	private bool isOpen = false;
-	private float maxDistance = 3f;
 
 	private enum DoorAnims
     {
@@ -21,13 +19,7 @@ public class Door : MonoBehaviour
 		doorAnim = GetComponent<Animator>();
     }
 
-    private void OnMouseOver()
-	{
-		if(Vector3.Distance(player.transform.position, transform.position) < maxDistance && Input.GetMouseButtonDown(0))
-			UseDoor();
-	}
-
-	private void UseDoor()
+	public void UseDoor()
 	{
 		DoorAnims anim;
 
