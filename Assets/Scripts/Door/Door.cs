@@ -15,7 +15,7 @@ public class Door : MonoBehaviour
 
     private void Start()
     {
-		player = LevelManager.Instance.GetPlayerObject();
+		player = GameManager.instance.GetPlayerObject();
 		doorAnim = GetComponent<Animator>();
     }
 

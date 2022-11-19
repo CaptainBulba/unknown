@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject noteScrollCanvas;
     [SerializeField] private TextMeshProUGUI noteScroll;
 
+    private GameObject playerObject;
+
     #region Singleton
     public static GameManager instance;
 
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
         album = Album.instance;
         toggleAlbumView(0);
         album.OnPhotoAddedToAlbum += updatePhotoCount;
+        playerObject = FindObjectOfType<Movement>().gameObject;
     }
 
     public void setScrollNote(string note)
@@ -69,5 +72,10 @@ public class GameManager : MonoBehaviour
             noteScroll.text = "";
             noteScrollCanvas.SetActive(false);
         }
+    }
+
+    public GameObject GetPlayerObject()
+    {
+        return playerObject;
     }
 }
