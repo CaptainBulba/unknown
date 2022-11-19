@@ -1,13 +1,11 @@
-using System.Collections;
 using UnityEngine;
 
 public class Door : MonoBehaviour
 {
 	private Animator doorAnim;
-	private GameObject player;
-
 	private bool isOpen = false;
-	private float maxDistance = 3f;
+
+	[SerializeField] private bool isLocked = false; 
 
 	private enum DoorAnims
     {
@@ -17,27 +15,30 @@ public class Door : MonoBehaviour
 
     private void Start()
     {
-		player = LevelManager.Instance.GetPlayerObject();
 		doorAnim = GetComponent<Animator>();
     }
 
-    private void OnMouseOver()
+	public void UseDoor()
 	{
-		if(Vector3.Distance(player.transform.position, transform.position) < maxDistance && Input.GetMouseButtonDown(0))
-			UseDoor();
-	}
+		if (!isLocked)
+		{
+			DoorAnims anim;
 
-	private void UseDoor()
-	{
-		DoorAnims anim;
+			if (isOpen)
+				anim = DoorAnims.Closing;
+			else
+				anim = DoorAnims.Opening;
 
-		if (isOpen)
-			anim = DoorAnims.Closing;
+			isOpen = !isOpen;
+			doorAnim.Play(anim.ToString());
+		}
 		else
-			anim = DoorAnims.Opening;
-
-		isOpen = !isOpen;
-		doorAnim.Play(anim.ToString());
+			Debug.Log("door is locked");
 	}
+
+	public void UnlockDoor()
+    {
+		isLocked = false;
+    }
 }
 
