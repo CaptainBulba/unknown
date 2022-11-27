@@ -33,6 +33,7 @@ public class DialogueManager : MonoBehaviour
 
     void CloseDialoguePanel()
     {
+        dialogueText.text = "";
         isDialoueOpen = false;
         dialoguePanel.SetActive(false);
     }
@@ -46,13 +47,11 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         OpenDialoguePanel();
+
         sentences.Clear();
 
-        foreach (string sentence in dialogue.sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
-
+        foreach (string sentence in dialogue.sentences) sentences.Enqueue(sentence);
+        
         DisplayNextSentence();
     }
 
@@ -82,7 +81,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        Invoke("CloseDialoguePanel", 7.0f);
+        Invoke("CloseDialoguePanel", 3.0f);
     }
 
 

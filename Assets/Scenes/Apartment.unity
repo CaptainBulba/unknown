@@ -2592,7 +2592,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3127203572879574869, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
       propertyPath: m_Name
-      value: note (2)
+      value: NoteInRoom
       objectReference: {fileID: 0}
     - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
       propertyPath: m_RootOrder
@@ -2649,6 +2649,14 @@ PrefabInstance:
     - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625737392942668591, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7625737392942668591, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: WHO ARE THEY?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
@@ -2808,7 +2816,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &1518241611
 MonoBehaviour:
@@ -2928,7 +2936,7 @@ MonoBehaviour:
   noteScroll: {fileID: 428591377}
   dialogue:
     sentences:
-    - Hello there, welcome to this cool apartment...
+    - what I am doing here?
 --- !u!4 &1593600240
 Transform:
   m_ObjectHideFlags: 0
