@@ -2220,7 +2220,7 @@ GameObject:
   - component: {fileID: 808951036529542556}
   - component: {fileID: 808951036529542529}
   - component: {fileID: 808951036529542530}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Drawer.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7429,7 +7429,7 @@ GameObject:
   - component: {fileID: 808951036689234874}
   - component: {fileID: 808951036689234872}
   - component: {fileID: 808951036689234873}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Drawer.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10908,7 +10908,7 @@ GameObject:
   - component: {fileID: 808951036802490433}
   - component: {fileID: 808951036802490439}
   - component: {fileID: 808951036802490432}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Knob.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11584,7 +11584,7 @@ GameObject:
   - component: {fileID: 808951036816990639}
   - component: {fileID: 808951036816990637}
   - component: {fileID: 808951036816990638}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Handle.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14288,7 +14288,6 @@ GameObject:
   - component: {fileID: 808951036897961149}
   - component: {fileID: 808951036897961150}
   - component: {fileID: 808951036897961151}
-  - component: {fileID: 808951036897961144}
   m_Layer: 0
   m_Name: Window_01
   m_TagString: Untagged
@@ -14392,21 +14391,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &808951036897961144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808951036897961146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea52830e8c3e35741a451b12277dfde1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openandclosewindow: {fileID: 808951036897961151}
-  open: 0
-  Player: {fileID: 0}
 --- !u!1 &808951036898518023
 GameObject:
   m_ObjectHideFlags: 0
@@ -19316,7 +19300,6 @@ GameObject:
   m_Component:
   - component: {fileID: 808951037082031593}
   - component: {fileID: 808951037082031598}
-  - component: {fileID: 808951037082031599}
   - component: {fileID: 808951037082031592}
   m_Layer: 0
   m_Name: Drawer
@@ -19353,21 +19336,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.19, z: 0.6}
   m_Center: {x: 0.3, y: 0.64, z: 0}
---- !u!114 &808951037082031599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808951037082031594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d5557a01f4e0740bd53d6ed2ab7327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pull_01: {fileID: 808951037082031592}
-  open: 0
-  Player: {fileID: 0}
 --- !u!95 &808951037082031592
 Animator:
   serializedVersion: 3
@@ -26580,8 +26548,9 @@ GameObject:
   - component: {fileID: 808951037331085887}
   - component: {fileID: 808951037331085880}
   - component: {fileID: 808951037331085881}
-  - component: {fileID: 808951037331085882}
-  m_Layer: 0
+  - component: {fileID: 590606608948303362}
+  - component: {fileID: 8888004841273604437}
+  m_Layer: 7
   m_Name: Door.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26684,7 +26653,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &808951037331085882
+--- !u!114 &590606608948303362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26693,12 +26662,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 808951037331085876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b5e0617227fa4743be84f23d9e5cb42, type: 3}
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openandclose1: {fileID: 808951037331085881}
-  open: 0
-  Player: {fileID: 0}
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
+--- !u!114 &8888004841273604437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037331085876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
 --- !u!1 &808951037336216855
 GameObject:
   m_ObjectHideFlags: 0
@@ -27010,6 +26995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
 --- !u!1 &808951037341022573
 GameObject:
   m_ObjectHideFlags: 0
@@ -28768,8 +28754,9 @@ GameObject:
   - component: {fileID: 808951037391818660}
   - component: {fileID: 808951037391818665}
   - component: {fileID: 808951037391818666}
-  - component: {fileID: 808951037391818667}
-  m_Layer: 0
+  - component: {fileID: 4439081779154268282}
+  - component: {fileID: 4937182335622563793}
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28823,7 +28810,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &808951037391818667
+--- !u!114 &4439081779154268282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28832,12 +28819,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 808951037391818661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d5557a01f4e0740bd53d6ed2ab7327, type: 3}
+  m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pull_01: {fileID: 808951037391818666}
-  open: 0
-  Player: {fileID: 0}
+  isLocked: 0
+--- !u!114 &4937182335622563793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037391818661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
 --- !u!1 &808951037394732629
 GameObject:
   m_ObjectHideFlags: 0
@@ -31850,6 +31853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
 --- !u!1 &808951037475977293
 GameObject:
   m_ObjectHideFlags: 0
@@ -33507,7 +33511,7 @@ GameObject:
   - component: {fileID: 808951037555989680}
   - component: {fileID: 808951037555989686}
   - component: {fileID: 808951037555989687}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mirror.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35214,8 +35218,7 @@ GameObject:
   - component: {fileID: 808951037621725826}
   - component: {fileID: 808951037621725827}
   - component: {fileID: 808951037621725852}
-  - component: {fileID: 808951037621725853}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ClosetDoor_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35299,21 +35302,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06565454, y: 2.8244824, z: 0.70461285}
   m_Center: {x: 0.029670998, y: 0.055483937, z: 0.34915048}
---- !u!114 &808951037621725853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808951037621725855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 469e00e876fb40142af620db2b198643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Closetopenandclose: {fileID: 808951037671042580}
-  open: 0
-  Player: {fileID: 0}
 --- !u!1 &808951037624987323
 GameObject:
   m_ObjectHideFlags: 0
@@ -36069,7 +36057,7 @@ GameObject:
   - component: {fileID: 808951037652496877}
   - component: {fileID: 808951037652496851}
   - component: {fileID: 808951037652496876}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Handle.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36654,9 +36642,10 @@ GameObject:
   - component: {fileID: 808951037671042584}
   - component: {fileID: 808951037671042585}
   - component: {fileID: 808951037671042586}
-  - component: {fileID: 808951037671042587}
   - component: {fileID: 808951037671042580}
-  m_Layer: 0
+  - component: {fileID: 5600789327451232814}
+  - component: {fileID: 7585572060895147483}
+  m_Layer: 7
   m_Name: ClosetDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36738,23 +36727,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.06565454, y: 2.8244824, z: 0.70461285}
-  m_Center: {x: -0.029671028, y: 0.055483937, z: 0.34914988}
---- !u!114 &808951037671042587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808951037671042582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 469e00e876fb40142af620db2b198643, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Closetopenandclose: {fileID: 808951037671042580}
-  open: 0
-  Player: {fileID: 0}
+  m_Size: {x: 0.06565454, y: 2.8244824, z: 1.422084}
+  m_Center: {x: -0.029671028, y: 0.055483937, z: 0.70788544}
 --- !u!95 &808951037671042580
 Animator:
   serializedVersion: 3
@@ -36774,6 +36748,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5600789327451232814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037671042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+--- !u!114 &7585572060895147483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037671042582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
 --- !u!1 &808951037672792741
 GameObject:
   m_ObjectHideFlags: 0
@@ -37759,7 +37764,7 @@ GameObject:
   - component: {fileID: 808951037705688085}
   - component: {fileID: 808951037705688091}
   - component: {fileID: 808951037705688084}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41061,7 +41066,7 @@ GameObject:
   - component: {fileID: 808951037837468514}
   - component: {fileID: 808951037837468512}
   - component: {fileID: 808951037837468513}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Knob.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41835,8 +41840,9 @@ GameObject:
   - component: {fileID: 808951037849997364}
   - component: {fileID: 808951037849997369}
   - component: {fileID: 808951037849997370}
-  - component: {fileID: 808951037849997371}
-  m_Layer: 0
+  - component: {fileID: 8221474839986229951}
+  - component: {fileID: 3307862436389887938}
+  m_Layer: 7
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41890,7 +41896,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &808951037849997371
+--- !u!114 &8221474839986229951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41899,12 +41905,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 808951037849997365}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d5557a01f4e0740bd53d6ed2ab7327, type: 3}
+  m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pull_01: {fileID: 808951037849997370}
-  open: 0
-  Player: {fileID: 0}
+  isLocked: 0
+--- !u!114 &3307862436389887938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037849997365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
 --- !u!1 &808951037857384313
 GameObject:
   m_ObjectHideFlags: 0
@@ -44209,9 +44231,10 @@ GameObject:
   - component: {fileID: 808951037950962517}
   - component: {fileID: 808951037950962518}
   - component: {fileID: 808951037950962519}
+  - component: {fileID: 2585932836076117148}
+  - component: {fileID: 6552967707326744123}
   - component: {fileID: 808951037950962512}
-  - component: {fileID: 808951037950962513}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Door.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44295,6 +44318,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12989847, y: 3.6130939, z: 0.9950218}
   m_Center: {x: 0.06002207, y: -0.00000011920929, z: 0.49751148}
+--- !u!114 &2585932836076117148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037950962515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+--- !u!114 &6552967707326744123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808951037950962515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
 --- !u!95 &808951037950962512
 Animator:
   serializedVersion: 3
@@ -44314,21 +44368,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &808951037950962513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808951037950962515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e8192f35a44301488ec0f072d9a16fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openandclose: {fileID: 808951037950962512}
-  open: 0
-  Player: {fileID: 0}
 --- !u!1 &808951037952213136
 GameObject:
   m_ObjectHideFlags: 0
@@ -46511,7 +46550,6 @@ GameObject:
   m_Component:
   - component: {fileID: 808951038027733367}
   - component: {fileID: 808951038027733364}
-  - component: {fileID: 808951038027733365}
   - component: {fileID: 808951038027733366}
   m_Layer: 0
   m_Name: Drawer_R_01
@@ -46548,21 +46586,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.05799544, y: 0.27, z: 0.74771595}
   m_Center: {x: 0.60588586, y: 0.87, z: 0.93}
---- !u!114 &808951038027733365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808951038027733360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d5557a01f4e0740bd53d6ed2ab7327, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pull_01: {fileID: 808951038027733366}
-  open: 0
-  Player: {fileID: 0}
 --- !u!95 &808951038027733366
 Animator:
   serializedVersion: 3
@@ -49267,7 +49290,7 @@ GameObject:
   - component: {fileID: 808951038105074435}
   - component: {fileID: 808951038105074433}
   - component: {fileID: 808951038105074434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mirror.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54434,6 +54457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
 --- !u!114 &4983805477057664835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54446,6 +54470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLocked: 0
 --- !u!1 &808951038250999617
 GameObject:
   m_ObjectHideFlags: 0

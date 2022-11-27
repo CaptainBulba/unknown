@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 5018950054057871644}
   - component: {fileID: 5018950054057871641}
   - component: {fileID: 5018950054057871646}
-  - component: {fileID: 5018950054057871647}
-  m_Layer: 0
+  - component: {fileID: 5155333454810727030}
+  - component: {fileID: 5424714882934203144}
+  m_Layer: 7
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,7 +67,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5018950054057871647
+--- !u!114 &5155333454810727030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,12 +76,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 5018950054057871645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d5557a01f4e0740bd53d6ed2ab7327, type: 3}
+  m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pull_01: {fileID: 5018950054057871646}
-  open: 0
-  Player: {fileID: 0}
+  isLocked: 0
+--- !u!114 &5424714882934203144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018950054057871645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
 --- !u!1 &5018950054084982444
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +109,7 @@ GameObject:
   - component: {fileID: 5018950054084982447}
   - component: {fileID: 5018950054084982441}
   - component: {fileID: 5018950054084982446}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Handle.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +190,7 @@ GameObject:
   - component: {fileID: 5018950054119123286}
   - component: {fileID: 5018950054119123280}
   - component: {fileID: 5018950054119123281}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Handle.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,8 +271,9 @@ GameObject:
   - component: {fileID: 5018950055006186487}
   - component: {fileID: 5018950055006186480}
   - component: {fileID: 5018950055006186481}
-  - component: {fileID: 5018950055006186486}
-  m_Layer: 0
+  - component: {fileID: 4718494292302744364}
+  - component: {fileID: 7241599678862445931}
+  m_Layer: 7
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +327,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5018950055006186486
+--- !u!114 &4718494292302744364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,12 +336,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 5018950055006186484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0d5557a01f4e0740bd53d6ed2ab7327, type: 3}
+  m_Script: {fileID: 11500000, guid: 60fa534b296f1bf4fbf6477c2bb85043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pull_01: {fileID: 5018950055006186481}
-  open: 0
-  Player: {fileID: 0}
+  holdInteract: 1
+  holdDuration: 1
+  isInteractable: 1
+  tooltipMessage: Hold E to Collect
+  item: {fileID: 0}
+  note: {fileID: 0}
+--- !u!114 &7241599678862445931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5018950055006186484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8e7e5a6a8f52bd40a5e8af2d0f49026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
 --- !u!1 &5018950055216721061
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +479,7 @@ GameObject:
   - component: {fileID: 5018950055296117031}
   - component: {fileID: 5018950055296117025}
   - component: {fileID: 5018950055296117030}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Drawer.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +594,7 @@ GameObject:
   - component: {fileID: 5018950055889833691}
   - component: {fileID: 5018950055889833688}
   - component: {fileID: 5018950055889833689}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Drawer.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}

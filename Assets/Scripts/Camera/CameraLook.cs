@@ -36,13 +36,13 @@ public class CameraLook : MonoBehaviour
     {
         if (playerState.GetCurrentState() == PlayerStates.CameraInverted)
         {
-            mouseX = -Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            mouseY = -Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            mouseX = -Input.GetAxis("Mouse X") * mouseSensitivity;
+            mouseY = -Input.GetAxis("Mouse Y") * mouseSensitivity;
         }
         else
         {
-            mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+            mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
         }
     }
 }
