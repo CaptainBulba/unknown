@@ -22,14 +22,13 @@ public class Movement : MonoBehaviour
         controller = GetComponent<CharacterController>();
         playerState = GetComponent<PlayerState>();
         footstepAudio = GetComponent<AudioSource>();
+        footstepAudio.clip = MusicManager.Instance.footsteps;
         speed = normalSpeed;
     }
 
     private void Update()
     {
         PlayerAxis();
-
-        
 
         Vector3 move = transform.right * x + transform.forward * z;
 

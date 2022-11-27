@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Frame
   - Album
+  - Door
+  - Drawer
+  - Shelf
+  - Window
   layers:
   - Default
   - TransparentFX
