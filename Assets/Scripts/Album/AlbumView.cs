@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class AlbumView : MonoBehaviour
 {
-    
     Album instance;
 
     private void Start()

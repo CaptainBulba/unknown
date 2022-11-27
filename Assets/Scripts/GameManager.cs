@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -9,8 +10,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI photoCount;
     [SerializeField] private GameObject noteScrollCanvas;
     [SerializeField] private TextMeshProUGUI noteScroll;
+    [SerializeField] private Dialogue dialogue;
 
     private GameObject playerObject;
+    DialogueManager dialogueManager;
 
     #region Singleton
     public static GameManager instance;
@@ -32,10 +35,17 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        dialogueManager = DialogueManager.instance;
         album = Album.instance;
         toggleAlbumView(0);
         album.OnPhotoAddedToAlbum += updatePhotoCount;
         playerObject = FindObjectOfType<Movement>().gameObject;
+        Invoke("displayInitialPlayerThought", 3.0f);
+    }
+
+    void displayInitialPlayerThought()
+    {
+        dialogueManager.StartDialogue(dialogue);
     }
 
     public void setScrollNote(GameObject note, string noteText)
