@@ -6,16 +6,19 @@ public class MusicManager : MonoBehaviour
 
     public AudioClip door;
     public AudioClip closedDoor;
-
     public AudioClip shelf;
     public AudioClip drawer;
     public AudioClip window;
 
-    public AudioClip background;
-
-    public AudioClip scaryBackground;
+    public AudioClip fridge;
+    public AudioClip oven;
 
     public AudioClip footsteps;
+    public AudioClip pickUpPaperKind;
+
+    public AudioClip mainBackground;
+    public AudioClip confusionAnxietyBackground;
+
 
     public static MusicManager Instance { get; private set; }
 
