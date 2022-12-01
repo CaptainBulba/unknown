@@ -16,8 +16,10 @@ public class Door : MonoBehaviour
 		Door,
 		Drawer,
 		Shelf,
-		Window
-    }
+		Window,
+		Fridge,
+		Oven
+	}
 
 	private enum DoorAnims
     {
@@ -64,6 +66,12 @@ public class Door : MonoBehaviour
 						break;
 					case Tags.Shelf:
 						clip = musicManger.shelf;
+						break;
+					case Tags.Fridge:
+						clip = musicManger.fridge;
+						break;
+					case Tags.Oven:
+						clip = musicManger.oven;
 						break;
 				}
 

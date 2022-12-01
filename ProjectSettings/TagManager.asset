@@ -10,6 +10,8 @@ TagManager:
   - Drawer
   - Shelf
   - Window
+  - Fridge
+  - Oven
   layers:
   - Default
   - TransparentFX

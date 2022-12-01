@@ -7,7 +7,7 @@ public class BackgroundMusic : MonoBehaviour
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.clip = MusicManager.Instance.background;
+        audioSource.clip = MusicManager.Instance.mainBackground;
         audioSource.Play();
     }
 }

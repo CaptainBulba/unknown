@@ -13,6 +13,9 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
     [SerializeField] private string tooltipMessage = "Hold E to Collect";
     [SerializeField] private Photo item;
     [SerializeField] private Note note;
+
+    [SerializeField] protected Dialogue dialogue;
+
     #endregion
 
     #region Properties    
