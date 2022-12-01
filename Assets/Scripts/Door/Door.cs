@@ -69,7 +69,7 @@ public class Door : MonoBehaviour
 
 				audioSource.clip = clip;
 				audioSource.Play();
-			}
+			}  
 		}
 		else
         {
