@@ -23,16 +23,6 @@ public class GameManager : MonoBehaviour
 
     private bool showAlbumView = false;
 
-    private void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        FindAllPhotos();
-    }
-
     private void Awake()
     {
         if (Instance == null)
@@ -44,6 +34,16 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
     }
     #endregion
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindAllPhotos();
+    }
 
     private void Start()
     {
@@ -97,7 +97,6 @@ public class GameManager : MonoBehaviour
 
             if (photos.Count == 0 && showAlbumView == false)
             {
-                LoadNextScene();
                 playerObject.GetComponent<PlayerState>().Freeze(true);
                 StartCoroutine(FindObjectOfType<Blackout>().InitiateBlackout());
             }   
