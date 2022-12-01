@@ -5,7 +5,6 @@ public class PlayerState : MonoBehaviour
     private PlayerStates currentState;
 
     private Movement movement;
-    private CameraLook mouseLook;
     private CameraShake cameraShake;
 
     private float shakeDuration = 5f;
@@ -13,10 +12,8 @@ public class PlayerState : MonoBehaviour
 
     private void Start()
     {
-        mouseLook = GetComponentInChildren<CameraLook>();
         cameraShake = GetComponentInChildren<CameraShake>();
         movement = GetComponent<Movement>();
-
         currentState = PlayerStates.Normal;
     }
 
@@ -49,6 +46,14 @@ public class PlayerState : MonoBehaviour
             currentState = PlayerStates.CameraShaking;
             StartCoroutine(cameraShake.Shake(shakeDuration, shakeMagnitude));
         }
+    }
+
+    public void Freeze(bool value)
+    {
+        if (value)
+            currentState = PlayerStates.Freeze;
+        else
+            currentState = PlayerStates.Normal;
     }
 
     public PlayerStates GetCurrentState()

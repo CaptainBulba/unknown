@@ -12,6 +12,7 @@ TagManager:
   - Window
   - Fridge
   - Oven
+  - Photo
   layers:
   - Default
   - TransparentFX

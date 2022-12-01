@@ -14,6 +14,7 @@ public class Pickable : AbstractInteractable
         {
             album.Add(InteractableItem);
             gameManager.toggleAlbumView(1);
+            gameManager.RemovePhoto(this.gameObject);
         } else if (InteractableNote != null) gameManager.setScrollNote(this.gameObject, InteractableNote.note);
 
         Destroy(gameObject);
@@ -26,7 +27,7 @@ public class Pickable : AbstractInteractable
     void Start()
     {
         album = Album.instance;
-        gameManager = GameManager.instance;
+        gameManager = GameManager.Instance;
         dialogueManager = DialogueManager.instance;
     }
 }

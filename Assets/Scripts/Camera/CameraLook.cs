@@ -23,15 +23,17 @@ public class CameraLook : MonoBehaviour
 
     private void Update()
     {
-        CameraAxis();
+        if (playerState.GetCurrentState() != PlayerStates.Freeze)
+        {
+            CameraAxis();
 
-        xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            xRotation -= mouseY;
+            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        playerObject.Rotate(Vector3.up * mouseX);
+            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+            playerObject.Rotate(Vector3.up * mouseX);
+        }
     }
-
     public void CameraAxis()
     {
         if (playerState.GetCurrentState() == PlayerStates.CameraInverted)

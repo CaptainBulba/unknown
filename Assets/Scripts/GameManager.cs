@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,25 +16,36 @@ public class GameManager : MonoBehaviour
     private GameObject playerObject;
     DialogueManager dialogueManager;
 
+    public List<GameObject> photos = new List<GameObject>();
+
     #region Singleton
-    public static GameManager instance;
+    public static GameManager Instance;
 
     private bool showAlbumView = false;
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindAllPhotos();
+    }
+
     private void Awake()
     {
-        if (instance != null)
+        if (Instance == null)
         {
-            Debug.LogWarning("Album has more tha one instance");
-            return;
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-
-        instance = this;
+        else if (Instance != this)
+            Destroy(gameObject);
     }
     #endregion
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         dialogueManager = DialogueManager.instance;
         album = Album.instance;
@@ -42,7 +55,7 @@ public class GameManager : MonoBehaviour
         Invoke("displayInitialPlayerThought", 3.0f);
     }
 
-    void displayInitialPlayerThought()
+    private void displayInitialPlayerThought()
     {
         dialogueManager.StartDialogue(dialogue);
     }
@@ -73,12 +86,21 @@ public class GameManager : MonoBehaviour
 
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
             showAlbumView = !showAlbumView;
             toggleAlbumView(showAlbumView ? 1 : 0);
+
+            playerObject.GetComponent<PlayerState>().Freeze(showAlbumView);
+
+            if (photos.Count == 0 && showAlbumView == false)
+            {
+                LoadNextScene();
+                playerObject.GetComponent<PlayerState>().Freeze(true);
+                StartCoroutine(FindObjectOfType<Blackout>().InitiateBlackout());
+            }   
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -91,5 +113,25 @@ public class GameManager : MonoBehaviour
     public GameObject GetPlayerObject()
     {
         return playerObject;
+    }
+
+    private void FindAllPhotos()
+    {
+        string photoTag = "Photo";
+        foreach (GameObject photo in GameObject.FindGameObjectsWithTag(photoTag))
+        {
+            photos.Add(photo);
+        }
+    }
+
+    public void RemovePhoto(GameObject photo)
+    {
+        photos.Remove(photo);
+    }
+
+    public void LoadNextScene()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextSceneIndex);
     }
 }

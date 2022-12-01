@@ -159,6 +159,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &26433965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037945062158, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -195,6 +197,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &137232884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -332,6 +336,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &170939190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +351,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLocked: 0
+--- !u!1 &179508356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179508357}
+  - component: {fileID: 179508359}
+  - component: {fileID: 179508358}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &179508357
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179508356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -431}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 671133362}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 1000}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &179508358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179508356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &179508359
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179508356}
+  m_CullTransparentMesh: 1
 --- !u!1001 &201883987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -507,6 +588,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &240339231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -669,6 +752,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &292211828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037729970916, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -692,6 +777,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &292211833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,6 +828,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &324458164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951038521898034, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -764,6 +853,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &324458169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -813,6 +904,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &373953383 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037585686640, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -849,6 +942,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &374436824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -929,6 +1024,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &420929264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1276,6 +1373,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &495262987 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037632786708, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -1312,6 +1411,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &510574599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037849997365, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -1335,6 +1436,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &510574604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,6 +1683,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &586793346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1730,6 +1835,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &645968298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036970686447, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -1766,6 +1873,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &655615547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951038425565900, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -1802,6 +1911,141 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
+--- !u!1 &671133357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 671133362}
+  - component: {fileID: 671133361}
+  - component: {fileID: 671133360}
+  - component: {fileID: 671133359}
+  - component: {fileID: 671133358}
+  - component: {fileID: 671133363}
+  m_Layer: 5
+  m_Name: Blackout
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &671133358
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671133357}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad6d71a7ad2cf304e848a0bff9c91c9a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &671133359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671133357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &671133360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671133357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &671133361
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671133357}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &671133362
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671133357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 179508357}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &671133363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671133357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e750f462071afb49a343fc5d72ecded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &678372733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1895,6 +2139,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &695880658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2024,6 +2270,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &707483524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036693282173, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2060,6 +2308,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &744953890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037391818661, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2083,6 +2333,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &744953895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2132,6 +2384,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &773508909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2212,6 +2466,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &781870385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2367,6 +2623,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &895263501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2403,6 +2661,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &916553164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2483,6 +2743,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &923351785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2633,6 +2895,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &937577293 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036720542901, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2669,6 +2933,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!4 &960122413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 808951038527081867, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2710,6 +2976,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &976879122 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037599700769, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2746,6 +3014,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!4 &981927859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 808951038102630747, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2844,6 +3114,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &1029213147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2861,7 +3133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6714367971614256065, guid: bc2652be574a1d940ae2b194e8b4620b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6714367971614256069, guid: bc2652be574a1d940ae2b194e8b4620b, type: 3}
       propertyPath: m_Pivot.x
@@ -3044,6 +3316,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &1068680767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3388,6 +3662,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!4 &1167141578 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1877306775963872070, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
@@ -3416,6 +3692,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1169311810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3522,6 +3800,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &1240095604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3602,6 +3882,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1244498200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3735,6 +4017,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1253327978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3784,6 +4068,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &1301900742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3799,6 +4085,22 @@ PrefabInstance:
       propertyPath: item
       value: 
       objectReference: {fileID: 11400000, guid: 2d19c3472d10f8341a2df6677b69c51e, type: 2}
+    - target: {fileID: 1877306775272997917, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: m_TagString
+      value: Photo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795841639632791263, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: m_TagString
+      value: Photo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795841639904341017, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: m_TagString
+      value: Photo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795841640686933052, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: m_TagString
+      value: Photo
+      objectReference: {fileID: 0}
     - target: {fileID: 6149792223299367418, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3
@@ -3884,6 +4186,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1314141103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3989,6 +4293,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1327101829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4095,6 +4401,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &1387526647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4195,6 +4503,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1449775171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4301,6 +4611,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &1518241606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4453,6 +4765,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1552582820 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1032805145256922547, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -4547,7 +4861,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1593600238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3c80807ecbf85f4f834cc7732813b8c, type: 3}
+  m_Script: {fileID: 11500000, guid: db06fab0952c6e74584f636233ee8f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   albumView: {fileID: 2013672658}
@@ -4557,6 +4871,7 @@ MonoBehaviour:
   dialogue:
     sentences:
     - what I am doing here?
+  photos: []
 --- !u!4 &1593600240
 Transform:
   m_ObjectHideFlags: 0
@@ -4594,6 +4909,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1601343276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4643,6 +4960,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &1628128656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037388456199, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -4666,6 +4985,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1628128659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4835,6 +5156,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1688400673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4884,6 +5207,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &1722052313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5156,6 +5481,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &1823583589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5236,6 +5563,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1850840638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5452,6 +5781,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1868975906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5681,6 +6012,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!4 &1929909361 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 808951037052277241, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -5722,6 +6055,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1001 &1944223245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5929,6 +6264,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &1971772255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6105,6 +6442,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &2006253651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6285,6 +6624,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &2038321619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036898518023, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -6321,6 +6662,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!1 &2068593483 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036730664949, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -6344,6 +6687,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &2068593490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6652,6 +6997,8 @@ MonoBehaviour:
   tooltipMessage: Hold E to Collect
   item: {fileID: 0}
   note: {fileID: 0}
+  dialogue:
+    sentences: []
 --- !u!114 &2146269202
 MonoBehaviour:
   m_ObjectHideFlags: 0

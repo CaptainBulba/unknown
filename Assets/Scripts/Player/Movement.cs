@@ -28,20 +28,25 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        PlayerAxis();
+        if(playerState.GetCurrentState() != PlayerStates.Freeze)
+        {
+            PlayerAxis();
 
-        Vector3 move = transform.right * x + transform.forward * z;
+            Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * speed * Time.deltaTime);
+            controller.Move(move * speed * Time.deltaTime);
 
-        velocity.y += gravity * Time.deltaTime;
+            velocity.y += gravity * Time.deltaTime;
 
-        controller.Move(velocity * Time.deltaTime);
+            controller.Move(velocity * Time.deltaTime);
 
-        if (move != new Vector3(0, 0, 0))
-            footstepAudio.enabled = true;
+            if (move != new Vector3(0, 0, 0))
+                footstepAudio.enabled = true;
+            else
+                footstepAudio.enabled = false;
+        }
         else
-            footstepAudio.enabled = false;
+            controller.Move(Vector3.zero);
     }
 
     public void SlowMovement(bool option)

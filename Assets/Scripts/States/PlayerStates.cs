@@ -5,4 +5,5 @@ public enum PlayerStates
     CameraInverted,
     SlowDown,
     CameraShaking,
+    Freeze
 }

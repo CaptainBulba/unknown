@@ -27,10 +27,10 @@ public class MusicManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-           // DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);
         }
-      //  else if (Instance != this)
-       //     Destroy(gameObject);
+        else if (Instance != this)
+            Destroy(gameObject);
     }
 
     public AudioSource GetObjectAudio()
