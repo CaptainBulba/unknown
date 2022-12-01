@@ -25,13 +25,13 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
+        if (Instance != null)
         {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
+            Debug.LogWarning("Album has more tha one instance");
+            return;
         }
-        else if (Instance != this)
-            Destroy(gameObject);
+
+        Instance = this;
     }
     #endregion
 
