@@ -19,7 +19,6 @@ public class MusicManager : MonoBehaviour
     public AudioClip mainBackground;
     public AudioClip confusionAnxietyBackground;
 
-
     public static MusicManager Instance { get; private set; }
 
     private void Awake()
@@ -37,4 +36,18 @@ public class MusicManager : MonoBehaviour
     {
         return objectAudio;
     }
+
+    public AudioSource GetBackgroundAudio()
+    {
+        return FindObjectOfType<BackgroundMusic>().GetComponent<AudioSource>();
+    }
+
+    public void SetDefaultBackground()
+    {
+        if (GetBackgroundAudio().clip != mainBackground)
+        {
+            GetBackgroundAudio().clip = mainBackground;
+            GetBackgroundAudio().Play();
+        }
+    }   
 }

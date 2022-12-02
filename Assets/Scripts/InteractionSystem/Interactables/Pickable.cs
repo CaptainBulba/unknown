@@ -18,6 +18,7 @@ public class Pickable : AbstractInteractable
         } else if (InteractableNote != null) gameManager.setScrollNote(this.gameObject, InteractableNote.note);
 
         UseEffect();
+        ChangeMusic();
 
         Destroy(gameObject);
     }

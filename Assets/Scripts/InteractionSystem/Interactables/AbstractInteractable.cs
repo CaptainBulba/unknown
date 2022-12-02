@@ -31,7 +31,8 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
     public Note InteractableNote => note;
 
     [SerializeField] Effects sideEffect = Effects.None;
-    
+    [SerializeField] BgSounds music = BgSounds.None;
+
     private bool effectUsed = false;
     #endregion
 
@@ -48,6 +49,24 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
             MethodInfo mi = FindObjectOfType<PlayerState>().GetType().GetMethod(sideEffect.ToString());
             FindObjectOfType<PlayerState>().StartCoroutine(mi.Name, null);
             effectUsed = true;
+        }
+    }
+
+    public void ChangeMusic()
+    {
+        if(music != BgSounds.None)
+        {
+            MusicManager musicManager = MusicManager.Instance;
+            AudioClip clip = musicManager.mainBackground;
+
+            switch (music)
+            {
+                case BgSounds.Scary:
+                    clip = musicManager.footsteps;
+                    break;
+            }
+            musicManager.GetBackgroundAudio().clip = clip;
+            musicManager.GetBackgroundAudio().Play();
         }
     }
     #endregion

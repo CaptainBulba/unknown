@@ -95,10 +95,15 @@ public class GameManager : MonoBehaviour
 
             playerObject.GetComponent<PlayerState>().Freeze(showAlbumView);
 
-            if (photos.Count == 0 && showAlbumView == false)
+            if (!showAlbumView)
             {
-                playerObject.GetComponent<PlayerState>().Freeze(true);
-                StartCoroutine(FindObjectOfType<Blackout>().InitiateBlackout());
+                MusicManager.Instance.SetDefaultBackground();
+
+                if(photos.Count == 0)
+                {
+                    playerObject.GetComponent<PlayerState>().Freeze(true);
+                    StartCoroutine(FindObjectOfType<Blackout>().InitiateBlackout());
+                }
             }   
         }
 
@@ -106,6 +111,8 @@ public class GameManager : MonoBehaviour
         {
             noteScroll.text = "";
             noteScrollCanvas.SetActive(false);
+
+            MusicManager.Instance.SetDefaultBackground();
         }
     }
 
