@@ -78,12 +78,13 @@ public class GameManager : MonoBehaviour
 
     public void toggleAlbumView(int show)
     {
+        showAlbumView = show == 1 ? true : false;
+
         foreach (Transform obj in albumView.transform)
         {
             obj.GetComponent<CanvasRenderer>().SetAlpha(show);
         }
         albumView.GetComponent<CanvasRenderer>().SetAlpha(show);
-
     }
 
     private void Update()
@@ -104,7 +105,7 @@ public class GameManager : MonoBehaviour
                     playerObject.GetComponent<PlayerState>().Freeze(true);
                     StartCoroutine(FindObjectOfType<Blackout>().InitiateBlackout());
                 }
-            }   
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))

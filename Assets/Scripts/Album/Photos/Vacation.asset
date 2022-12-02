@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b878918ce2e2486498378a39e6f5e7f6, type: 3}
-  m_Name: dog
+  m_Name: Vacation
   m_EditorClassIdentifier: 
-  name: Dog Photo
-  icon: {fileID: 21300000, guid: 1566ec2ee7813ca45965445eaed1a9d1, type: 3}
+  name: Vacation
+  icon: {fileID: 21300000, guid: 4bc92facf1f261647becd9b243b9ceda, type: 3}
   isDefaultPhoto: 0

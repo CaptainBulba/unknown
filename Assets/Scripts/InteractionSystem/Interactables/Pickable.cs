@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Pickable : AbstractInteractable
 {
@@ -8,7 +9,7 @@ public class Pickable : AbstractInteractable
 
     public override void OnInteract()
     {
-        if (dialogue.sentences.Length > 0) displayThoughts();
+        if (dialogue.sentences.Length > 0) StartCoroutine(displayThoughts());
 
         if (InteractableItem != null)
         {
@@ -22,9 +23,11 @@ public class Pickable : AbstractInteractable
 
         Destroy(gameObject);
     }
-    public void displayThoughts()
+    public IEnumerator displayThoughts()
     {
         dialogueManager.StartDialogue(dialogue);
+
+        yield return new WaitForSeconds(10f);
     }
 
     void Start()
