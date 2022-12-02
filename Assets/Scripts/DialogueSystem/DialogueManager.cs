@@ -38,7 +38,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
     }
 
-    void OpenDialoguePanel()
+    public void OpenDialoguePanel()
     {
         isDialoueOpen = true;
         dialoguePanel.SetActive(true);
@@ -69,7 +69,7 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
-    IEnumerator TypeSentence(string sentence)
+    public IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
