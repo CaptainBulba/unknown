@@ -17,6 +17,8 @@ public class Pickable : AbstractInteractable
             gameManager.RemovePhoto(this.gameObject);
         } else if (InteractableNote != null) gameManager.setScrollNote(this.gameObject, InteractableNote.note);
 
+        UseEffect();
+
         Destroy(gameObject);
     }
     public void displayThoughts()

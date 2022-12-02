@@ -3,34 +3,19 @@ using UnityEngine;
 
 public class DoorInteractable : AbstractInteractable
 {
-    private PlayerState playerState;
+    private DialogueManager dialogueManager;
 
-    [SerializeField] Effects sideEffect = Effects.None;
-    private bool effectUsed = false;
-
-    private enum Effects
+    public override void OnInteract()
     {
-        None,
-        ShakeCamera, 
-        SlowMovement,
-        CameraInverted,
-        MovementInverted
+        if (dialogue.sentences.Length > 0)
+            dialogueManager.StartDialogue(dialogue);
+
+        GetComponent<Door>().UseDoor();
+        UseEffect();
     }
 
     private void Start()
     {
-        playerState = FindObjectOfType<PlayerState>();
-    }
-
-    public override void OnInteract()
-    {
-        GetComponent<Door>().UseDoor();
-        
-        if(sideEffect != Effects.None && !effectUsed)
-        {
-            MethodInfo mi = playerState.GetType().GetMethod(sideEffect.ToString());
-            playerState.StartCoroutine(mi.Name, null);
-            effectUsed = true;
-        }
+        dialogueManager = DialogueManager.instance;
     }
 }

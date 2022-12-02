@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnityEngine;
 
 public class AbstractInteractable : MonoBehaviour, IInteractable
@@ -28,12 +29,26 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
 
     public Photo InteractableItem => item;
     public Note InteractableNote => note;
+
+    [SerializeField] Effects sideEffect = Effects.None;
+    
+    private bool effectUsed = false;
     #endregion
 
     #region Methods
     public virtual void OnInteract()
     {
         Debug.Log("INTERACTED: " + gameObject.name);
+    }
+
+    public void UseEffect()
+    {
+        if (sideEffect != Effects.None && !effectUsed)
+        {
+            MethodInfo mi = FindObjectOfType<PlayerState>().GetType().GetMethod(sideEffect.ToString());
+            FindObjectOfType<PlayerState>().StartCoroutine(mi.Name, null);
+            effectUsed = true;
+        }
     }
     #endregion
 }
