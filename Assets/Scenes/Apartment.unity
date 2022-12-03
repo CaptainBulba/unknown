@@ -5366,7 +5366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectAudio: {fileID: 1953166939}
   door: {fileID: 8300000, guid: f45a7476d416d4a45b269fcb22f50fe8, type: 3}
-  closedDoor: {fileID: 8300000, guid: 120867651f155574ea8ca247307d766d, type: 3}
+  closedDoor: {fileID: 8300000, guid: 9c7d2ba54342cd347a6ca01d6def540c, type: 3}
   shelf: {fileID: 8300000, guid: 275c23379dc362c4f90145962707a95b, type: 3}
   drawer: {fileID: 8300000, guid: e0bbb6c9c26c2bd40a5fbb5b3cca3687, type: 3}
   window: {fileID: 8300000, guid: 953535f9edcda30428b63e0119e10fe1, type: 3}
@@ -7525,6 +7525,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 808951037038503345, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
     - target: {fileID: 808951037038503351, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: Player
       value: 
@@ -7571,7 +7575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808951037143683705, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 808951037149958388, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Layer
@@ -7745,6 +7749,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 808951037388456199, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
     - target: {fileID: 808951037391818661, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -7897,6 +7905,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 808951037575835672, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
     - target: {fileID: 808951037585686640, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -7925,9 +7937,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 808951037597530892, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
     - target: {fileID: 808951037599700769, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 808951037599700769, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 808951037599700774, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: Player
@@ -8079,7 +8099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808951037729970916, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_TagString
-      value: Shelf
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 808951037729970922, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: Player
@@ -8116,6 +8136,10 @@ PrefabInstance:
     - target: {fileID: 808951037766818774, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 808951037766818774, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 808951037768369836, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Layer
@@ -8433,6 +8457,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 808951038158061157, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
     - target: {fileID: 808951038172735377, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -8452,6 +8480,10 @@ PrefabInstance:
     - target: {fileID: 808951038183314946, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 808951038183314946, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 808951038219730527, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
       propertyPath: m_Materials.Array.data[0]
