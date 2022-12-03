@@ -9,7 +9,7 @@ public class Pickable : AbstractInteractable
 
     public override void OnInteract()
     {
-        if (dialogue.sentences.Length > 0) gameManager.SetDialogue(dialogue);
+        if (dialogue.sentences.Length > 0) dialogueManager.StartDialogue(dialogue);
 
         if (InteractableItem != null)
         {

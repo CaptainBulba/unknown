@@ -4132,6 +4132,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1525613102564663140, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525613102564663140, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "\u201CSo, this is\u2026 Why am I here?\u201D\n\u201CI really want to
+        go home. Where is this place?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1525613102564663140, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1664523192167488652, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: music
       value: 1
@@ -4140,10 +4153,35 @@ PrefabInstance:
       propertyPath: sideEffect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1664523192167488652, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664523192167488652, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "\u201CI\u2026 Who are these people? Am I supposed to know them\u2026\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1664523192167488652, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "\u201CThe family\u2026 Are they, my family? I don\u2019t know them!\u201D"
+      objectReference: {fileID: 0}
     - target: {fileID: 1706191017831866124, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: door
       value: 
       objectReference: {fileID: 8105049400587237875}
+    - target: {fileID: 1810256835819516860, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1810256835819516860, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "\u201CI\u2026 I can\u2019t\u2026 remember\u201D\n\u201CThis apparently,
+        it\u2019s my wedding\u2026 This is me.\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1810256835819516860, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1877306774423374158, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4175,6 +4213,19 @@ PrefabInstance:
     - target: {fileID: 1877306775272997917, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_TagString
       value: Photo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068409011866966593, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068409011866966593, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "\u201CWoah! That is high up!\u201D\n\u201CThat is me\u2026 I remember
+        I liked doing sports but\u2026\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2068409011866966593, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2719648856036469101, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_RootOrder
@@ -4216,9 +4267,36 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Photo
       objectReference: {fileID: 0}
+    - target: {fileID: 4155694586811539602, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155694586811539602, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "\u201CI really like the ocean when it\u2019s sunny. It\u2019s such
+        a beauty\u2026\u201D\n\u201CWait\u2026 Is that me? I don\u2019t remember
+        that beach. Where is that?\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4155694586811539602, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4261101237769384975, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_Name
       value: NoteOnBed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828995640916416974, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828995640916416974, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "\u201CI\u2026 Who are these people? Am I supposed to know them\u2026\u201D\n\u201CThe
+        family\u2026 Are they, my family? I don\u2019t know them!\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828995640916416974, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6127755796762719719, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_TagString
@@ -4283,6 +4361,19 @@ PrefabInstance:
     - target: {fileID: 6149792223301751183, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_Name
       value: Interactables
+      objectReference: {fileID: 0}
+    - target: {fileID: 6769197435090398132, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6769197435090398132, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "\u201COh! I remember this. This is the school I used to teach in.\u201D\n\u201CI
+        wonder how all these kids are doing nowadays\u201D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6769197435090398132, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6791984328073129821, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_LocalPosition.x

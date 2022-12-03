@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
@@ -80,7 +79,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         sentences.Clear();
-        Invoke("CloseDialoguePanel", 3.0f);
+        Invoke("CloseDialoguePanel", 10.0f);
     }
 
 
