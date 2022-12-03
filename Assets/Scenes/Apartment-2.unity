@@ -161,6 +161,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &26433965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037945062158, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -199,6 +201,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &137232884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -338,6 +342,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &170939190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,6 +596,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &240339231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -754,6 +762,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &292211828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037729970916, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -779,6 +789,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &292211833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -830,6 +842,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &324458164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951038521898034, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -855,6 +869,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &324458169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,6 +922,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &373953383 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037585686640, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -944,6 +962,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &374436824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1026,6 +1046,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &420929264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1375,6 +1397,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &495262987 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037632786708, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -1413,6 +1437,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &510574599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037849997365, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -1438,6 +1464,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &510574604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1685,6 +1713,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &586793346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1837,6 +1867,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &645968298 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036970686447, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -1875,6 +1907,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &655615547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951038425565900, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -1913,6 +1947,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &671133357
 GameObject:
   m_ObjectHideFlags: 0
@@ -2141,6 +2177,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &695880658
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,6 +2310,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &707483524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036693282173, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2310,6 +2350,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &744953890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037391818661, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2335,6 +2377,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &744953895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2386,6 +2430,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &773508909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2468,6 +2514,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &781870385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2625,6 +2673,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &895263501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2663,6 +2713,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &916553164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2745,6 +2797,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &923351785
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2897,6 +2951,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &937577293 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036720542901, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2935,6 +2991,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!4 &960122413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 808951038527081867, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -2978,6 +3036,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &976879122 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037599700769, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -3016,6 +3076,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!4 &981927859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 808951038102630747, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -3116,6 +3178,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &1029213147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3262,24 +3326,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6714367972818844876, guid: bc2652be574a1d940ae2b194e8b4620b, type: 3}
   m_PrefabInstance: {fileID: 1029213147}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1030394783 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3127203572879574869, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-  m_PrefabInstance: {fileID: 1387526647}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1030394785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030394783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5045e186f54380b4d8f854643b39809d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  door: {fileID: 1552582820}
 --- !u!1 &1036049156 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037766818774, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -3318,6 +3364,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &1068680767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3664,11 +3712,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
---- !u!4 &1167141578 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1877306775963872070, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
-  m_PrefabInstance: {fileID: 1301900742}
-  m_PrefabAsset: {fileID: 0}
+  sideEffect: 0
+  music: 0
 --- !u!1 &1169311807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036819958085, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -3694,6 +3739,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1169311810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3802,6 +3849,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &1240095604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3884,6 +3933,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1244498200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4019,6 +4070,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1253327978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4070,6 +4123,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &1301900742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4077,6 +4132,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1706191017831866124, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 1552582820}
     - target: {fileID: 1877306774423374158, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4188,6 +4247,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1314141103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4295,6 +4356,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1327101829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4403,83 +4466,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
---- !u!1001 &1387526647
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1167141578}
-    m_Modifications:
-    - target: {fileID: 3127203572879574869, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_Name
-      value: NoteInRoom
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3957
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.024325572
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.40371594
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.613
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.474
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -9.093
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3265755081585145853, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7625737392942668591, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: dialogue.sentences.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7625737392942668591, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
-      propertyPath: dialogue.sentences.Array.data[0]
-      value: WHO ARE THEY?
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8686c812650300a43b9ea8a26642fa92, type: 3}
+  sideEffect: 0
+  music: 0
 --- !u!1 &1449775164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5483098436186490732, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -4505,6 +4493,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1449775171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4613,6 +4603,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &1518241606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,6 +4759,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1552582820 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1032805145256922547, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -4911,6 +4905,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1601343276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4962,6 +4958,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &1628128656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951037388456199, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -4987,6 +4985,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1628128659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5158,6 +5158,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1688400673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5209,6 +5211,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &1722052313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5483,6 +5487,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &1823583589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5565,6 +5571,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1850840638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5783,6 +5791,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1868975906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6014,6 +6024,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!4 &1929909361 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 808951037052277241, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -6057,6 +6069,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1001 &1944223245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6266,6 +6280,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &1971772255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6444,6 +6460,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &2006253651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6626,6 +6644,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &2038321619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036898518023, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -6664,6 +6684,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!1 &2068593483 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808951036730664949, guid: 49f576a03ece56a4e9c640ed081f6a68, type: 3}
@@ -6689,6 +6711,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &2068593490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6999,6 +7023,8 @@ MonoBehaviour:
   note: {fileID: 0}
   dialogue:
     sentences: []
+  sideEffect: 0
+  music: 0
 --- !u!114 &2146269202
 MonoBehaviour:
   m_ObjectHideFlags: 0
