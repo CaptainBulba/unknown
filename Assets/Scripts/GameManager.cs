@@ -106,7 +106,7 @@ public class GameManager : MonoBehaviour
             {
                 MusicManager.Instance.SetDefaultBackground();
 
-                if (dialogue != null) displayPlayerThought();
+                if (dialogue != null && !noteScrollCanvas.activeSelf) displayPlayerThought();
 
                 if (photos.Count == 0)
                 {
@@ -123,8 +123,9 @@ public class GameManager : MonoBehaviour
             noteScroll.text = "";
             noteScrollCanvas.SetActive(false);
 
+
             MusicManager.Instance.SetDefaultBackground();
-            if (dialogue != null) displayPlayerThought();
+            if (dialogue != null && !showAlbumView) displayPlayerThought();
         }
     }
 
