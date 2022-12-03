@@ -5374,6 +5374,7 @@ MonoBehaviour:
   oven: {fileID: 8300000, guid: ef773ef34e4e6ab4cbf3922a038f11c4, type: 3}
   footsteps: {fileID: 8300000, guid: 30e67db200eb8d343bbc94763c446df6, type: 3}
   pickUpPaperKind: {fileID: 8300000, guid: 8b1c549ba7ace8f4fa36d01fc511f8e9, type: 3}
+  earRinging: {fileID: 8300000, guid: 166c78f028463604b8bed74817729915, type: 3}
   mainBackground: {fileID: 8300000, guid: 912ed475b3502774f9de2abee1bc24b5, type: 3}
   confusionAnxietyBackground: {fileID: 8300000, guid: f287b87030804234d881bacf1a4942e1, type: 3}
 --- !u!4 &1735488770
