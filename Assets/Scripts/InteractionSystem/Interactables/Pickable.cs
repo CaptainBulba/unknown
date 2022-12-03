@@ -21,7 +21,7 @@ public class Pickable : AbstractInteractable
         UseEffect();
         ChangeMusic();
 
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     void Start()
