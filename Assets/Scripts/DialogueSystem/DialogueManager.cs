@@ -48,6 +48,8 @@ public class DialogueManager : MonoBehaviour
     {
         OpenDialoguePanel();
 
+
+        Debug.Log("Clearing");
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences) sentences.Enqueue(sentence);
@@ -59,6 +61,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            Debug.Log("Ending it");
             EndDialogue();
             return;
         }
