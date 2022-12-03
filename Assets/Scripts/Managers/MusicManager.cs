@@ -16,6 +16,8 @@ public class MusicManager : MonoBehaviour
     public AudioClip footsteps;
     public AudioClip pickUpPaperKind;
 
+    public AudioClip earRinging;
+
     public AudioClip mainBackground;
     public AudioClip confusionAnxietyBackground;
 
