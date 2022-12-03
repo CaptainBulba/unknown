@@ -52,12 +52,18 @@ public class GameManager : MonoBehaviour
         toggleAlbumView(0);
         album.OnPhotoAddedToAlbum += updatePhotoCount;
         playerObject = FindObjectOfType<Movement>().gameObject;
-        Invoke("displayInitialPlayerThought", 3.0f);
+        Invoke("displayPlayerThought", 3.0f);
     }
 
-    private void displayInitialPlayerThought()
+    public void SetDialogue(Dialogue d)
+    {
+        dialogue = d;
+    }
+
+    private void displayPlayerThought()
     {
         dialogueManager.StartDialogue(dialogue);
+        dialogue = null;
     }
 
     public void setScrollNote(GameObject note, string noteText)
@@ -91,21 +97,25 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
+
             showAlbumView = !showAlbumView;
             toggleAlbumView(showAlbumView ? 1 : 0);
-
             playerObject.GetComponent<PlayerState>().Freeze(showAlbumView);
 
             if (!showAlbumView)
             {
                 MusicManager.Instance.SetDefaultBackground();
 
-                if(photos.Count == 0)
+                if (dialogue != null) displayPlayerThought();
+
+                if (photos.Count == 0)
                 {
                     playerObject.GetComponent<PlayerState>().Freeze(true);
                     StartCoroutine(FindObjectOfType<Blackout>().InitiateBlackout());
                 }
+
             }
+
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -114,6 +124,7 @@ public class GameManager : MonoBehaviour
             noteScrollCanvas.SetActive(false);
 
             MusicManager.Instance.SetDefaultBackground();
+            if (dialogue != null) displayPlayerThought();
         }
     }
 

@@ -9,7 +9,7 @@ public class Pickable : AbstractInteractable
 
     public override void OnInteract()
     {
-        if (dialogue.sentences.Length > 0) StartCoroutine(displayThoughts());
+        if (dialogue.sentences.Length > 0) gameManager.SetDialogue(dialogue);
 
         if (InteractableItem != null)
         {
@@ -21,13 +21,7 @@ public class Pickable : AbstractInteractable
         UseEffect();
         ChangeMusic();
 
-        Destroy(gameObject);
-    }
-    public IEnumerator displayThoughts()
-    {
-        dialogueManager.StartDialogue(dialogue);
-
-        yield return new WaitForSeconds(10f);
+        gameObject.SetActive(false);
     }
 
     void Start()

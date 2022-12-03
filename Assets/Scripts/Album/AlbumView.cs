@@ -27,7 +27,6 @@ public class AlbumView : MonoBehaviour
 
                 if (photoFrame.sprite == null)
                 {
-                    print($"adding {photo.name}");
                     photoFrame.enabled = true;
                     photoFrame.sprite = photo.icon;
                     break;
