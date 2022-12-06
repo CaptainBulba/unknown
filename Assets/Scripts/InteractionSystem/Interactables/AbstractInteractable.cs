@@ -62,7 +62,7 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
             switch (music)
             {
                 case BgSounds.Scary:
-                    clip = musicManager.footsteps;
+                    clip = musicManager.mainBackground;
                     break;
             }
             musicManager.GetBackgroundAudio().clip = clip;
