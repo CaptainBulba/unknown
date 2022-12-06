@@ -4,8 +4,10 @@ using UnityEngine;
 public class MovePhotos : MonoBehaviour
 {
     private Dictionary<GameObject, Vector3> photos = new Dictionary<GameObject, Vector3>();
+    
     private string photoTag = "Photo";
-    private float moveMagnifier = 3f;
+
+    [SerializeField] private float moveMagnifier = 3f;
 
     void Start()
     {

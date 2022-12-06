@@ -12,7 +12,7 @@ public class DoorInteractable : AbstractInteractable
 
         GetComponent<Door>().UseDoor();
         UseEffect();
-        ChangeMusic();
+       // ChangeMusic();
     }
 
     private void Start()
