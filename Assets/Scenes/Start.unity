@@ -374,7 +374,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000019073, y: -0.000012398}
-  m_SizeDelta: {x: 1047, y: 589}
+  m_SizeDelta: {x: 1131, y: 636.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &514055731
 MonoBehaviour:
@@ -1377,6 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f44eac4ea806c4b8e5a5cddbfb9235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveMagnifier: 3
 --- !u!135 &1951310085
 SphereCollider:
   m_ObjectHideFlags: 0
