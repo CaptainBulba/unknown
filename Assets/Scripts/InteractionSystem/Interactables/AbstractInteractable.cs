@@ -54,20 +54,10 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
 
     public void ChangeMusic()
     {
-        if(music != BgSounds.None)
-        {
-            MusicManager musicManager = MusicManager.Instance;
-            AudioClip clip = musicManager.mainBackground;
 
-            switch (music)
-            {
-                case BgSounds.Scary:
-                    clip = musicManager.footsteps;
-                    break;
-            }
-            musicManager.GetBackgroundAudio().clip = clip;
-            musicManager.GetBackgroundAudio().Play();
-        }
+        MusicManager musicManager = MusicManager.Instance;
+        musicManager.GetBackgroundAudio().clip = musicManager.confusionAnxietyBackground;
+        musicManager.GetBackgroundAudio().Play();
     }
     #endregion
 }
