@@ -1,9 +1,11 @@
 using System.Collections;
+using System.Reflection;
 using UnityEngine;
 
 public class PlayerState : MonoBehaviour
 {
     private PlayerStates currentState;
+    private Effects effectToApply;
 
     private Movement movement;
     private CameraShake cameraShake;
@@ -22,6 +24,7 @@ public class PlayerState : MonoBehaviour
     {
         currentState = PlayerStates.Normal;
         movement.SlowMovement(false);
+        effectToApply = Effects.None;
     }
 
 
@@ -91,5 +94,20 @@ public class PlayerState : MonoBehaviour
     public PlayerStates GetCurrentState()
     {
         return currentState;
+    }
+
+
+    public void SetEffect(Effects effect)
+    {
+        effectToApply = effect;
+    }
+
+    public void InitiateEffect()
+    {
+        if (effectToApply != Effects.None)
+        {
+            MethodInfo mi = GetType().GetMethod(effectToApply.ToString());
+            StartCoroutine(mi.Name, null);
+        }
     }
 }
