@@ -44,17 +44,15 @@ public class AbstractInteractable : MonoBehaviour, IInteractable
 
     public void UseEffect()
     {
-        if (sideEffect != Effects.None && !effectUsed)
+        if(sideEffect != Effects.None && !effectUsed)
         {
-            MethodInfo mi = FindObjectOfType<PlayerState>().GetType().GetMethod(sideEffect.ToString());
-            FindObjectOfType<PlayerState>().StartCoroutine(mi.Name, null);
+            FindObjectOfType<PlayerState>().SetEffect(sideEffect);
             effectUsed = true;
         }
     }
 
     public void ChangeMusic()
     {
-
         MusicManager musicManager = MusicManager.Instance;
         musicManager.GetBackgroundAudio().clip = musicManager.confusionAnxietyBackground;
         musicManager.GetBackgroundAudio().Play();

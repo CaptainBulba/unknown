@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
             if (!showAlbumView)
             {
                 MusicManager.Instance.SetDefaultBackground();
-
+                FindObjectOfType<PlayerState>().InitiateEffect();
                 // if (dialogue != null && !noteScrollCanvas.activeSelf) displayPlayerThought();
 
                 if (photos.Count == 0)
@@ -115,7 +115,6 @@ public class GameManager : MonoBehaviour
                 }
 
             }
-
         }
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -125,6 +124,7 @@ public class GameManager : MonoBehaviour
 
 
             MusicManager.Instance.SetDefaultBackground();
+            FindObjectOfType<PlayerState>().InitiateEffect();
             // if (dialogue != null && !showAlbumView) displayPlayerThought();
         }
     }

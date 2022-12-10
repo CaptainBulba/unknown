@@ -5600,6 +5600,18 @@ PrefabInstance:
       propertyPath: mouseSensitivity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2517585316224609474, guid: d229768336626264a9597163678f3605, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517585316224609474, guid: d229768336626264a9597163678f3605, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517585316224609474, guid: d229768336626264a9597163678f3605, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 2517585316224609479, guid: d229768336626264a9597163678f3605, type: 3}
       propertyPath: uiPanel
       value: 
