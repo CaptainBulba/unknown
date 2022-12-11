@@ -105,7 +105,7 @@ public class GameManager : MonoBehaviour
             if (!showAlbumView)
             {
                 MusicManager.Instance.SetDefaultBackground();
-
+                FindObjectOfType<PlayerState>().InitiateEffect();
                 // if (dialogue != null && !noteScrollCanvas.activeSelf) displayPlayerThought();
 
                 if (photos.Count == 0)
@@ -116,15 +116,12 @@ public class GameManager : MonoBehaviour
 
             }
 
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
             noteScroll.text = "";
             noteScrollCanvas.SetActive(false);
 
 
             MusicManager.Instance.SetDefaultBackground();
+            FindObjectOfType<PlayerState>().InitiateEffect();
             // if (dialogue != null && !showAlbumView) displayPlayerThought();
         }
     }
@@ -139,7 +136,7 @@ public class GameManager : MonoBehaviour
         string photoTag = "Photo";
         foreach (GameObject photo in GameObject.FindGameObjectsWithTag(photoTag))
         {
-            photos.Add(photo);
+            if (photo.activeSelf) photos.Add(photo);
         }
     }
 
