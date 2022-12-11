@@ -115,10 +115,7 @@ public class GameManager : MonoBehaviour
                 }
 
             }
-        }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
             noteScroll.text = "";
             noteScrollCanvas.SetActive(false);
 
@@ -139,7 +136,7 @@ public class GameManager : MonoBehaviour
         string photoTag = "Photo";
         foreach (GameObject photo in GameObject.FindGameObjectsWithTag(photoTag))
         {
-            photos.Add(photo);
+            if (photo.activeSelf) photos.Add(photo);
         }
     }
 
