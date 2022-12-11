@@ -97,28 +97,29 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-
-            showAlbumView = !showAlbumView;
-            toggleAlbumView(showAlbumView ? 1 : 0);
-            playerObject.GetComponent<PlayerState>().Freeze(showAlbumView);
-
-            if (!showAlbumView)
+            if (!noteScrollCanvas.activeSelf)
             {
-                MusicManager.Instance.SetDefaultBackground();
-                FindObjectOfType<PlayerState>().InitiateEffect();
-                // if (dialogue != null && !noteScrollCanvas.activeSelf) displayPlayerThought();
+                showAlbumView = !showAlbumView;
+                toggleAlbumView(showAlbumView ? 1 : 0);
+                playerObject.GetComponent<PlayerState>().Freeze(showAlbumView);
 
-                if (photos.Count == 0)
+                if (!showAlbumView)
                 {
-                    playerObject.GetComponent<PlayerState>().Freeze(true);
-                    StartCoroutine(FindObjectOfType<Blackout>().InitiateBlackout());
-                }
+                    MusicManager.Instance.SetDefaultBackground();
+                    FindObjectOfType<PlayerState>().InitiateEffect();
+                    // if (dialogue != null && !noteScrollCanvas.activeSelf) displayPlayerThought();
 
+                    if (photos.Count == 0)
+                    {
+                        playerObject.GetComponent<PlayerState>().Freeze(true);
+                        StartCoroutine(FindObjectOfType<Blackout>().InitiateBlackout());
+                    }
+
+                }
             }
 
             noteScroll.text = "";
             noteScrollCanvas.SetActive(false);
-
 
             MusicManager.Instance.SetDefaultBackground();
             FindObjectOfType<PlayerState>().InitiateEffect();

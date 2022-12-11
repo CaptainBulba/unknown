@@ -4374,6 +4374,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 25027645089423022, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 268474592166584368, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.31
@@ -4505,6 +4509,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 3046023104370999506, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 6694e1d2f1a9b864a9eecefc3629ff22, type: 2}
     - target: {fileID: 3383877417665410007, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_Name
       value: NoteOnRoomDoor
@@ -4551,6 +4559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NoteOnBed
       objectReference: {fileID: 0}
+    - target: {fileID: 4613645300342212592, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4828995640916416974, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: dialogue.sentences.Array.size
       value: 1
@@ -4564,9 +4576,21 @@ PrefabInstance:
       propertyPath: dialogue.sentences.Array.data[1]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5118966582887843170, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: item
+      value: 
+      objectReference: {fileID: 11400000, guid: 836cc6302a856bf4a8c8af88b5aa00d6, type: 2}
+    - target: {fileID: 5118966582887843170, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: sideEffect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5426034187083455818, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6052621213416679468, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: sideEffect
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6127755796762719719, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_TagString
@@ -4657,9 +4681,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -10.104
       objectReference: {fileID: 0}
+    - target: {fileID: 6795365896751955825, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: sideEffect
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8384286117688942401, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8801728233453706491, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.578
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849413193138702317, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4caf3ba0155b89e46945dcb2c4c52c9a, type: 3}
