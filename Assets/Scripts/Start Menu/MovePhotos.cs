@@ -28,7 +28,9 @@ public class MovePhotos : MonoBehaviour
         {
             float newX = photo.Value.x - (xNormalized * moveMagnifier);
             float newY = photo.Value.y - (yNormalized * moveMagnifier);
-            photo.Key.gameObject.transform.position = new Vector3(newX, newY, 0);
+            photo.Key.gameObject.transform.position = new Vector3(newX, newY, photo.Value.z);
+
+            Debug.Log(photo.Key.gameObject.transform.position);
         }
     }
 }

@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 240137341}
   - component: {fileID: 240137343}
   - component: {fileID: 240137342}
+  - component: {fileID: 240137344}
   m_Layer: 5
   m_Name: Photo (5)
   m_TagString: Photo
@@ -215,7 +216,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240137340}
   m_LocalRotation: {x: -0, y: -0, z: -0.8424186, w: -0.5388237}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 1018194913}
@@ -264,6 +265,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240137340}
   m_CullTransparentMesh: 1
+--- !u!210 &240137344
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240137340}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &502366913
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +287,7 @@ GameObject:
   - component: {fileID: 502366914}
   - component: {fileID: 502366916}
   - component: {fileID: 502366915}
+  - component: {fileID: 502366917}
   m_Layer: 5
   m_Name: Photo (6)
   m_TagString: Photo
@@ -290,7 +303,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502366913}
   m_LocalRotation: {x: -0, y: -0, z: -0.16038093, w: -0.98705524}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 1018194913}
@@ -339,6 +352,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502366913}
   m_CullTransparentMesh: 1
+--- !u!210 &502366917
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502366913}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &514055729
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +374,7 @@ GameObject:
   - component: {fileID: 514055730}
   - component: {fileID: 514055732}
   - component: {fileID: 514055731}
+  - component: {fileID: 514055733}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -414,6 +439,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514055729}
   m_CullTransparentMesh: 1
+--- !u!210 &514055733
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514055729}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &786127711
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +461,7 @@ GameObject:
   - component: {fileID: 786127712}
   - component: {fileID: 786127714}
   - component: {fileID: 786127713}
+  - component: {fileID: 786127715}
   m_Layer: 5
   m_Name: Photo
   m_TagString: Photo
@@ -489,6 +526,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786127711}
   m_CullTransparentMesh: 1
+--- !u!210 &786127715
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786127711}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &1018194909
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,10 +585,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -557,8 +605,8 @@ Canvas:
   m_GameObject: {fileID: 1018194909}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1713155853}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -610,6 +658,7 @@ GameObject:
   - component: {fileID: 1125326922}
   - component: {fileID: 1125326924}
   - component: {fileID: 1125326923}
+  - component: {fileID: 1125326925}
   m_Layer: 5
   m_Name: Photo (4)
   m_TagString: Photo
@@ -633,7 +682,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -77.461}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -418, y: 169}
+  m_AnchoredPosition: {x: -415, y: 154}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1125326923
@@ -674,6 +723,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125326921}
   m_CullTransparentMesh: 1
+--- !u!210 &1125326925
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125326921}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &1187775696
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +745,7 @@ GameObject:
   - component: {fileID: 1187775697}
   - component: {fileID: 1187775699}
   - component: {fileID: 1187775698}
+  - component: {fileID: 1187775700}
   m_Layer: 5
   m_Name: Photo (7)
   m_TagString: Photo
@@ -700,7 +761,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187775696}
   m_LocalRotation: {x: -0, y: -0, z: -0.16038093, w: -0.98705524}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 1018194913}
@@ -749,6 +810,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1187775696}
   m_CullTransparentMesh: 1
+--- !u!210 &1187775700
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187775696}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &1210872216
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +832,7 @@ GameObject:
   - component: {fileID: 1210872217}
   - component: {fileID: 1210872219}
   - component: {fileID: 1210872218}
+  - component: {fileID: 1210872220}
   m_Layer: 5
   m_Name: Photo (2)
   m_TagString: Photo
@@ -824,6 +897,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210872216}
   m_CullTransparentMesh: 1
+--- !u!210 &1210872220
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210872216}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &1222156330
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +994,7 @@ GameObject:
   - component: {fileID: 1405892539}
   - component: {fileID: 1405892541}
   - component: {fileID: 1405892540}
+  - component: {fileID: 1405892542}
   m_Layer: 5
   m_Name: Photo (3)
   m_TagString: Photo
@@ -974,6 +1059,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405892538}
   m_CullTransparentMesh: 1
+--- !u!210 &1405892542
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405892538}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &1713155851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1280,6 +1376,7 @@ GameObject:
   - component: {fileID: 1939907892}
   - component: {fileID: 1939907894}
   - component: {fileID: 1939907893}
+  - component: {fileID: 1939907895}
   m_Layer: 5
   m_Name: Photo (1)
   m_TagString: Photo
@@ -1303,7 +1400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 418, y: -136}
+  m_AnchoredPosition: {x: 398, y: -136}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1939907893
@@ -1344,6 +1441,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939907891}
   m_CullTransparentMesh: 1
+--- !u!210 &1939907895
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939907891}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
 --- !u!1 &1951310083
 GameObject:
   m_ObjectHideFlags: 0
