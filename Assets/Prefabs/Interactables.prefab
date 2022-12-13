@@ -489,10 +489,13 @@ MonoBehaviour:
   holdDuration: 1
   isInteractable: 1
   tooltipMessage: Hold E to Collect
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 836cc6302a856bf4a8c8af88b5aa00d6, type: 2}
   note: {fileID: 0}
   dialogue:
-    sentences: []
+    sentences:
+    - 'This place... is it?
+
+      Yes, I remember this, it''s my home!'
   sideEffect: 3
   music: 1
 --- !u!1001 &4027081382025333086
@@ -635,6 +638,17 @@ PrefabInstance:
     - target: {fileID: 1942194434884027012, guid: bd822876c89fcf442ab0aa2d93c6b86b, type: 3}
       propertyPath: music
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1942194434884027012, guid: bd822876c89fcf442ab0aa2d93c6b86b, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1942194434884027012, guid: bd822876c89fcf442ab0aa2d93c6b86b, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'I... I can''t.. remeber
+
+        This apparently is my wedding... that''s
+        me.'
       objectReference: {fileID: 0}
     - target: {fileID: 8542268906829039494, guid: bd822876c89fcf442ab0aa2d93c6b86b, type: 3}
       propertyPath: m_RootOrder
@@ -826,7 +840,11 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 249a2f46d5870474e87d6b4c8de5ed8f, type: 2}
   note: {fileID: 0}
   dialogue:
-    sentences: []
+    sentences:
+    - 'Oh! I remeber this, this is the school i used to teach in.
+
+      I wonder
+      how all these kids are doing nowadays...'
   sideEffect: 1
   music: 1
 --- !u!1001 &8183298549485761301
@@ -952,7 +970,11 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 6694e1d2f1a9b864a9eecefc3629ff22, type: 2}
   note: {fileID: 0}
   dialogue:
-    sentences: []
+    sentences:
+    - 'This is a birthday photo.., is it my birthday?
+
+      This is a pretty birthday
+      cake.'
   sideEffect: 4
   music: 1
 --- !u!1001 &8506745234409732796
@@ -1086,7 +1108,11 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 195cfb4174ada5146b81b30b8cfb39fc, type: 2}
   note: {fileID: 0}
   dialogue:
-    sentences: []
+    sentences:
+    - 'I really like the ocean when it sunny. It''s such a beauty...
+
+      Wait..
+      is that me? I don''t remember that beach... Where is that?'
   sideEffect: 2
   music: 1
 --- !u!1001 &8690713752126595600
@@ -1220,7 +1246,10 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 3d006c0409bfc574ca3fde1f10f1a4d2, type: 2}
   note: {fileID: 0}
   dialogue:
-    sentences: []
+    sentences:
+    - 'Woah! that is high up!
+
+      That is me.. I remeber i like doing sports but..'
   sideEffect: 0
   music: 1
 --- !u!1001 &9112965191857315967
@@ -1233,6 +1262,17 @@ PrefabInstance:
     - target: {fileID: 3281148734894131283, guid: b1f34c0dde8e96c498b5c16cc6f8dc86, type: 3}
       propertyPath: music
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281148734894131283, guid: b1f34c0dde8e96c498b5c16cc6f8dc86, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281148734894131283, guid: b1f34c0dde8e96c498b5c16cc6f8dc86, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: 'So, this is why I''m here?
+
+        I really want to go home, where
+        is this place?'
       objectReference: {fileID: 0}
     - target: {fileID: 3388268090105016652, guid: b1f34c0dde8e96c498b5c16cc6f8dc86, type: 3}
       propertyPath: m_LocalPosition.x
